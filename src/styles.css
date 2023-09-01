@@ -21,9 +21,22 @@
   --font-family: 'DM Sans', sans-serif;
   --font-weights: 400, 700;
 }
+*{
+  padding: 0;
+  margin: 0;
+
+}
 
 body{
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: var(--body-font-size);
+  width: 100dvw;
+  height: 100dvh;
+  background-color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }

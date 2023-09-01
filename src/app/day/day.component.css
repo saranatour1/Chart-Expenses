@@ -1,0 +1,96 @@
+
+
+
+.bar {
+  display: inline-block;
+  width: 40px; /* Width of each bar */
+  margin-right: 10px;
+
+  /* color: #fff; */
+  text-align: center;
+  padding: 5px;
+  border-radius: 7px;
+  animation: item-height 1s ease forwards
+}
+
+
+
+.max-amount .bar{
+  background-color: var(--cyan); /* Bar color */
+}
+.normal .bar{
+  background-color: var(--soft-red);
+}
+
+
+.label {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+p{
+  text-align: center;
+  margin-right: 10px;
+  font-size: 14px;
+  color: var(--medium-brown);
+}
+
+@keyframes item-height { from { height: 0 } }
+
+.bar:hover {
+  filter: brightness(1.1); /* Change to the desired hover color */
+  cursor: pointer; /* Optional: Change the cursor to a pointer to indicate interactivity */
+}
+
+.tool-tip{
+  background-color: var(--dark-brown);
+  border-radius: 7px;
+
+  /* margin-right: 14px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px;
+  /* width: 80%; */
+  width: min-content;
+
+}
+.tool-tip p{
+  color: var(--very-pale-orange);
+  line-height: 1.6;
+  font-size: 14px;
+  margin: 5px 2px;
+
+}
+
+@media screen and (max-width: 490px) {
+  .bar{
+    width: 35px;
+    margin-right: 8px;
+  }
+  .tool-tip{
+    margin-right: 4px;
+
+  }
+
+  .tool-tip p{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .bar{
+    width: 30px;
+    margin-right: 5px;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+  .bar{
+    width: 25px;
+    margin-right: 3px;
+  }
+  
+}

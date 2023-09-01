@@ -1,0 +1,35 @@
+.balance{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+
+  /* gap: 1rem; */
+  height: 5rem;
+  /* padding-left: 5px;
+  padding-right: 5px; */
+  gap: 136px;
+  
+  background-color: var(--soft-red);
+  border-radius: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.balance > div small , .balance > div h3{
+  color: var( --cream);
+}
+
+.balance > div small{
+  font-size: 12px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.balance> div h3{
+  font-weight: 400;
+}
+
+.balance img{
+  width: 15%;
+}

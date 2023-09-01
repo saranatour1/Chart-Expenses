@@ -1,1 +1,36 @@
 
+.main-chart{
+  border:1px solid black ;
+  width: 30rem;
+  height: 30rem;
+  transition: width 0.3s;
+  /* padding: 14px; */
+}
+
+@media (max-width: 516px) {
+  .main-chart {
+    width: 28rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .main-chart {
+    width: 25rem;
+  }
+}
+
+
+@media (max-width: 420px) {
+  .main-chart {
+    width: 22rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .main-chart {
+    width: 20rem;
+  }
+}
+
+
+
