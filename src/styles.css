@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+:root {
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+
+  /* Colors */
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+
+  /* Neutral Colors */
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+
+  /* Typography */
+  --body-font-size: 18px;
+
+  /* Font Family */
+  --font-family: 'DM Sans', sans-serif;
+  --font-weights: 400, 700;
+}
+
+body{
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: var(--body-font-size);
+}
