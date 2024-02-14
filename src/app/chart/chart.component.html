@@ -1,26 +1,28 @@
-  <div class="chart">
-    <h3>
-      Spending - Last {{inputData.length}} days
-    </h3>
+<div class="chart">
+  <h3>Spending - Last {{ inputData.length }} days</h3>
 
-<div class="resolve">
-  <div *ngFor="let item of inputData" [ngClass]="{'max-amount': item === getMaxAmountItem()}" >
-    <app-day  [className]="item === getMaxAmountItem() ? 'max-amount' : 'normal'" [dayVal]="item"></app-day>
+  <div class="resolve">
+    <div
+      *ngFor="let item of inputData"
+      [ngClass]="{ 'max-amount': item === getMaxAmountItem() }"
+    >
+      <app-day
+        [className]="item === getMaxAmountItem() ? 'max-amount' : 'normal'"
+        [dayVal]="item"
+      ></app-day>
+    </div>
   </div>
-</div>
-<hr>
+  <hr />
 
-  <!-- unimportant -->
+  <!-- unimportant , sara 5 months later: why? -->
   <div class="non-imp">
     <div>
       <small>Total this month</small>
-      <h3>$ {{monthlyTotal}}</h3>
+      <h3>$ {{ monthlyTotal }}</h3>
     </div>
     <div>
-      <p>+ {{lastMonthPercent}}</p>
+      <p>+ {{ lastMonthPercent }}</p>
       <small>from last month</small>
     </div>
-
   </div>
-
-  </div>
+</div>

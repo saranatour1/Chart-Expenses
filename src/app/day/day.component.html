@@ -1,13 +1,12 @@
-<div class={{className}}>
-  <!-- <div class="meter-bar-wrapper">
-    <meter min="0" max="50" [value]="dayVal.amount" class=".meter-bar">Hi</meter>
-  </div> -->
-  <div *ngIf="showTool" class="tool-tip" >
-    <p>${{dayVal.amount}}</p>
+<div class="{{ className }}">
+  <div *ngIf="showTool" class="tool-tip">
+    <p>${{ dayVal.amount }}</p>
   </div>
-  <div class="bar" [style.height.px]="dayVal.amount*2.4" (mouseenter)="showTool = true" (mouseleave)="showTool = false"></div>
-  <p>{{dayVal.day}}</p>
-
-  <!-- {{dayVal.amount}}
-  {{dayVal.day}} -->
+  <div
+    class="bar"
+    [style.height.px]="dayVal.amount * 2.4"
+    (mouseenter)="showTool = true"
+    (mouseleave)="showTool = false"
+  ></div>
+  <p>{{ dayVal.day }}</p>
 </div>

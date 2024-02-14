@@ -14,6 +14,7 @@
   border-radius: 14px;
   margin-top: 5px;
   margin-bottom: 5px;
+  max-width: 30rem;
 }
 
 .balance > div small , .balance > div h3{
